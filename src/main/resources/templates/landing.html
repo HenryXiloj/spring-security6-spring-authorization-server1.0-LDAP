@@ -1,0 +1,20 @@
+<!doctype html>
+<html
+        lang="en"
+        xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <title>Spring Authorization Server: Home</title>
+</head>
+<body>
+
+<h3><Strong>Spring Authorization Server authentication!</strong><br/>You are successfully logged in!</h3>
+<p><strong>You are logged as <span class="badge badge-dark" th:text="${principalName}">null</span>.</strong></p>
+<small>
+    <a th:href="@{/logout}" >
+        <i></i>  Logout
+    </a>
+    <br>
+</small>
+</body>
+</html>
